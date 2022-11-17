@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import { createObject } from "./main.js"
 import { createPhaseCard } from "./createPhaseCard.js"
+import { createTechniqueCard } from "./createTechniqueCard.js"
 
 const data = require("./enterprise-attack.json");
 const jsonData = data.objects
@@ -33,6 +34,13 @@ function NewLayer() {
         <div className="OuterTechniqueCardContainer">
             <div className="InnerTechniqueCardContainer1">
                 <div className="InnerTechniqueCardRow">
+                {createTechniqueCard(newObj)}
+                {createTechniqueCard(newObj)}
+                {createTechniqueCard(newObj)}
+                {createTechniqueCard(newObj)}
+                {createTechniqueCard(newObj)}
+                {createTechniqueCard(newObj)}
+                
                 <Card
                 color="warning"
             >

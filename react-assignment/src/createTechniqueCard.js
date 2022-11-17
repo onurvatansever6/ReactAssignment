@@ -1,14 +1,31 @@
-import { createObject } from "./main.js"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Card, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 
-const data = require("./enterprise-attack.json")
-const jsonData = data.objects
-const newObj = createObject(jsonData)
-
-function createTechniqueCard (newObj) {
+export function createTechniqueCard (newObj) {
+    let techniqueNames = []
+    let subtechniqueCounts = []
     for (let i = 0; i < Object.keys(newObj).length; i++){       //newObj[arrayName] objedeki subtechniquelere ulaşmak için kullanılacak
         let arrayName = Object.keys(newObj)[i]
-        console.log(arrayName)
+        for (let j = 0; j < newObj[arrayName].length; j++){
+            techniqueNames.push(newObj[arrayName][j].names)
+            subtechniqueCounts.push(newObj[arrayName][j].subtechniques.length)
+        }
+        
     }
-}
 
-createTechniqueCard(newObj)
+    return <Card
+    color="warning"
+>
+    <CardBody>
+        <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+               {techniqueNames[0]}
+        </CardTitle>
+    <br></br>
+        <CardSubtitle style={{fontSize:"12px"}}
+            className="mb-2 text-muted"
+        >
+            {subtechniqueCounts[0]} SubTechniques
+        </CardSubtitle>
+    </CardBody>
+</Card>
+}

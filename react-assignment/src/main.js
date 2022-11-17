@@ -57,7 +57,7 @@ for( let i = 0; i < array.length; i++) {
     let kill_chain_phases = array[i].kill_chain_phases
     let subtechniques = array[i].subtechniques
     let obj = {
-        name: name,
+        names: name,
         techniqueID: techniqueID,
         subtechniques: subtechniques      
     }
@@ -76,7 +76,7 @@ return resultObj
 }
 
 const newObj = createObject(jsonData)
-console.log(newObj)
+console.log((newObj["collection"][0].subtechniques.length))
 
 
 
