@@ -11,38 +11,42 @@ for(let i = 0; i < jsonData.length; i++) {
         let isSubtechnique = jsonData[i].x_mitre_is_subtechnique
         
         if(jsonData[i].kill_chain_phases) {
-            for(let j = 0; j < jsonData[i].kill_chain_phases.length; j++){
-                if(isSubtechnique) {
-                    const maintechniqueID = techniqueID.split(".")[0];
-                    let index = array.findIndex((item) => item.techniqueID === maintechniqueID)
-                        
-                    if (index === -1){  //maintechniqueID techniqueID ile eşleşmiyorsa ayrica duplicate olmasini da engelliyoruz
-                        array.push({
-                            name: undefined,
-                            techniqueID: maintechniqueID,
-                            kill_chain_phases: undefined,
-                            subtechniques: [{
-                                name: name,
-                                techniqueID: techniqueID
-                            }]
-                        })
-                    } 
+            if(isSubtechnique) {
+                const maintechniqueID = techniqueID.split(".")[0]; 
+                let index = array.findIndex((item) => item.techniqueID === maintechniqueID)
+                    
+                if (index === -1){  
+                    array.push({
+                        name: undefined,
+                        techniqueID: maintechniqueID,
+                        kill_chain_phases: undefined,
+                        subtechniques: [{
+                            name: name,
+                            techniqueID: techniqueID
+                        }]
+                    })
+                } else {
+
+                    array[index].subtechniques = [...array[index].subtechniques, {
+                        name: name,
+                        techniqueID: techniqueID
+                    }]
+                }
+            } 
+            else {
+                let index = array.findIndex((item) => item.techniqueID === techniqueID)
+                    
+                if (index === -1){
+                    array.push({
+                        name: name,
+                        techniqueID: techniqueID,
+                        kill_chain_phases: jsonData[i].kill_chain_phases,
+                        subtechniques: []
+                    })
                 } 
                 else {
-                    let index = array.findIndex((item) => item.techniqueID === techniqueID)
-                        
-                    if (index === -1){
-                        array.push({
-                            name: name,
-                            techniqueID: techniqueID,
-                            kill_chain_phases: jsonData[i].kill_chain_phases,
-                            subtechniques: []
-                        })
-                    } 
-                    else {
-                        array[index].name = name
-                        array[index].kill_chain_phases = jsonData[i].kill_chain_phases
-                    }
+                    array[index].name = name
+                    array[index].kill_chain_phases = jsonData[i].kill_chain_phases
                 }
             }
         }
