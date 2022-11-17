@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #1A1A23 !important;
 }
@@ -10,5 +13,26 @@ body {
   margin-top: 50px;
 }
 
+.PhaseNameCards{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.PhaseNameCards > * {
+  font-size: 10px;
+  text-align: center;
+  margin: 3px;
+}
+
+.TechniquesGrid {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.subtechnique-child{
+  width: 100px;
+}
 
 
