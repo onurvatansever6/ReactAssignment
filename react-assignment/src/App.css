@@ -4,6 +4,7 @@
 body {
   background-color: #1A1A23 !important;
 }
+
 .Home {
   margin-top: 200px;
   text-align: center;
@@ -18,21 +19,115 @@ body {
   margin-right: 10px;
   margin-top: 10px;
   display: flex;
+  gap: 5px;
 }
 
 .PhaseNameCards > * {
+  flex-basis: 100%;
   font-size: 10px;
   text-align: center;
-  margin: 3px;
+  vertical-align: middle;
 }
 
-.TechniquesGrid {
+.OuterTechniqueCardContainer {
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 10px;
+  display: flex;
 }
 
-.subtechnique-child{
-  width: 100px;
+.InnerTechniqueCardContainer1 {
+  width: 131.08px;
 }
+
+.InnerTechniqueCardContainer2, .InnerTechniqueCardContainer3, .InnerTechniqueCardContainer4, .InnerTechniqueCardContainer5, .InnerTechniqueCardContainer6, .InnerTechniqueCardContainer7, .InnerTechniqueCardContainer8, .InnerTechniqueCardContainer9, .InnerTechniqueCardContainer10, .InnerTechniqueCardContainer11, .InnerTechniqueCardContainer12, .InnerTechniqueCardContainer13, .InnerTechniqueCardContainer14{
+  margin-left: 5px;
+  width: 131.08px;
+}
+
+.InnerTechniqueCardContainer1 > * {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer2 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer3 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer4 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer5 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer6 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer7 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer8 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer9 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer10 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer11 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer12 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer13 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InnerTechniqueCardContainer14 > *{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 
 

@@ -1,7 +1,7 @@
-
-function createObject(){
 const data = require("./enterprise-attack.json");
 let jsonData = data.objects
+
+export function createObject(jsonData){
 let array = []
 
 for(let i = 0; i < jsonData.length; i++) {
@@ -72,13 +72,11 @@ for( let i = 0; i < array.length; i++) {
     }
 }
 
-console.log(typeof(resultObj))
 return resultObj
 }
 
-const myObj = createObject()
-console.log(Object.keys(myObj))
-console.log(myObj["reconnaissance"].length)
-// console.log(myObj)
+const newObj = createObject(jsonData)
+console.log(newObj)
+
 
 

@@ -3,292 +3,538 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button} from 'reactstrap';
 import { createObject } from "./main.js"
+import { createPhaseCard } from "./createPhaseCard.js"
+
 const data = require("./enterprise-attack.json");
-
-let createSubContainer = () => {
-    let data = createObject()
-    console.log(data.impact[0])
-
-    return <div className='subtechnique-child'>
-        {data[0].name}
-    </div>
-    
-}
-
-let deneme = createSubContainer()
+const jsonData = data.objects
+const newObj = createObject(jsonData)
 
 function NewLayer() {
     return (
       <body>
         <div className= "NewLayer">
             <div className="PhaseNameCards">
-            <Card
-                color="light"
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/16fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/16fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/16fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/16fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/16fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/16fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/16fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/16fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/16fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/16fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/16fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/16fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="light"
-                style={{
-                 width: '1/14fr'
-                }}
->
-            <CardBody>
-                <CardTitle tag="h5">
-                    Command and Control
-                </CardTitle>
-                <br></br>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    16 techniques
-                </CardSubtitle>
-                </CardBody>
-            </Card>
+            {createPhaseCard(newObj, 0)}
+            {createPhaseCard(newObj, 1)}
+            {createPhaseCard(newObj, 2)}
+            {createPhaseCard(newObj, 3)}
+            {createPhaseCard(newObj, 4)}
+            {createPhaseCard(newObj, 5)}
+            {createPhaseCard(newObj, 6)}
+            {createPhaseCard(newObj, 7)}
+            {createPhaseCard(newObj, 8)}
+            {createPhaseCard(newObj, 9)}
+            {createPhaseCard(newObj, 10)}
+            {createPhaseCard(newObj, 11)}
+            {createPhaseCard(newObj, 12)}
+            {createPhaseCard(newObj, 13)}
             </div>
         </div>
-        <div className="TechniquesGrid">
-        {createSubContainer()}
+        <div className="OuterTechniqueCardContainer">
+            <div className="InnerTechniqueCardContainer1">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer2">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer3">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer4">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer5">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer6">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer7">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer8">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer9">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer10">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer11">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer12">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer13">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
+            <div className="InnerTechniqueCardContainer14">
+                <div className="InnerTechniqueCardRow">
+                <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+            <Card
+                color="warning"
+            >
+                <CardBody>
+                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
+                        adam ol lan   
+                    </CardTitle>
+                <br></br>
+                    <CardSubtitle
+                        className="mb-2 text-muted"
+                        tag="h6"
+                    >
+                        10 SubTechniques
+                    </CardSubtitle>
+                </CardBody>
+            </Card>
+                </div>
+            </div>
         </div>
       </body>
     );
