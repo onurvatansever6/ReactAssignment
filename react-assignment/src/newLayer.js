@@ -34,513 +34,72 @@ function NewLayer() {
         <div className="OuterTechniqueCardContainer">
             <div className="InnerTechniqueCardContainer1">
                 <div className="InnerTechniqueCardRow">
-                {createTechniqueCard(newObj)}
-                {createTechniqueCard(newObj)}
-                {createTechniqueCard(newObj)}
-                {createTechniqueCard(newObj)}
-                {createTechniqueCard(newObj)}
-                {createTechniqueCard(newObj)}
-                
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "defense-evasion")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer2">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "privilege-escalation")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer3">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "execution")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer4">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "persistence")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer5">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "command-and-control")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer6">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "collection")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer7">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "lateral-movement")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer8">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "credential-access")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer9">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "discovery")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer10">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "resource-development")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer11">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "reconnaissance")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer12">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "impact")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer13">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "initial-access")}
                 </div>
             </div>
             <div className="InnerTechniqueCardContainer14">
                 <div className="InnerTechniqueCardRow">
-                <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
-            <Card
-                color="warning"
-            >
-                <CardBody>
-                    <CardTitle style={{fontSize:"13px", fontWeight: 'bold'}}>
-                        adam ol lan   
-                    </CardTitle>
-                <br></br>
-                    <CardSubtitle
-                        className="mb-2 text-muted"
-                        tag="h6"
-                    >
-                        10 SubTechniques
-                    </CardSubtitle>
-                </CardBody>
-            </Card>
+                    {createTechniqueCard(newObj, "exfiltration")}
                 </div>
             </div>
         </div>

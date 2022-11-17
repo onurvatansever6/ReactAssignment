@@ -51,7 +51,7 @@ for(let i = 0; i < jsonData.length; i++) {
 
 let resultObj = {}
 
-for( let i = 0; i < array.length; i++) {
+for (let i = 0; i < array.length; i++) {
     let name = array[i].name
     let techniqueID = array[i].techniqueID
     let kill_chain_phases = array[i].kill_chain_phases
@@ -62,7 +62,7 @@ for( let i = 0; i < array.length; i++) {
         subtechniques: subtechniques      
     }
     
-    for( let j = 0; j < kill_chain_phases.length; j++) {
+    for (let j = 0; j < kill_chain_phases.length; j++) {
         if (resultObj[kill_chain_phases[j].phase_name]){
             resultObj[kill_chain_phases[j].phase_name].push(obj)
         } 
@@ -76,7 +76,7 @@ return resultObj
 }
 
 const newObj = createObject(jsonData)
-console.log((newObj["collection"][0].subtechniques.length))
+console.log((Object.keys(newObj)))
 
 
 
