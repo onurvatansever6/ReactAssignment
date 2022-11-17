@@ -75,8 +75,5 @@ for (let i = 0; i < array.length; i++) {
 return resultObj
 }
 
-const newObj = createObject(jsonData)
-console.log((Object.keys(newObj)))
-
 
 
