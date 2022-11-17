@@ -8,7 +8,7 @@ export function createTechniqueCard (newObj, phases) {
 
     for (let j = 0; j < newObj[phases].length; j++){
         techniqueNames.push(newObj[phases][j].names)
-        subtechniqueCounts.push(newObj[phases][j].subtechniques.length)
+        subtechniqueCounts.push((newObj[phases][j].subtechniques).length)
         cards.push(
             <Card
                 color="warning"
