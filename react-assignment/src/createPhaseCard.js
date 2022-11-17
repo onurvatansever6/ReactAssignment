@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button} from 'reactstrap';
+import { Card, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 
 export function createPhaseCard(newObj, counter){
     let phaseNames = []
@@ -8,10 +8,10 @@ export function createPhaseCard(newObj, counter){
     for (let i = 0; i < Object.keys(newObj).length; i++){
         let pairs = ""
         let arrayName = Object.keys(newObj)[i]
-        techniqueCounter.push(newObj[arrayName].length)
-        let slicedPhaseName = Object.keys(newObj)[i].split("-");
+        techniqueCounter.push(newObj[arrayName].length)     // i'ncı key'in teknik sayısını al al
+        let slicedPhaseName = Object.keys(newObj)[i].split("-"); 
         for (let j = 0; j < slicedPhaseName.length; j++){
-            pairs += slicedPhaseName[j]+" "
+            pairs += slicedPhaseName[j]+" "     //sliceladığımız key nameleri birleştir
         }
         let capitalPairs = pairs.toUpperCase()
         phaseNames.push({name: capitalPairs })

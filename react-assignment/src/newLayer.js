@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button} from 'reactstrap';
+import { Card, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import { createObject } from "./main.js"
 import { createPhaseCard } from "./createPhaseCard.js"
 
