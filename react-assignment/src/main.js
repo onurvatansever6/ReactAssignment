@@ -25,8 +25,8 @@ for(let i = 0; i < jsonData.length; i++) {
                             techniqueID: techniqueID
                         }]
                     })
-                } else {
-
+                } 
+                else {
                     array[index].subtechniques = [...array[index].subtechniques, {
                         name: name,
                         techniqueID: techniqueID
@@ -75,7 +75,6 @@ for (let i = 0; i < array.length; i++) {
         }
     }
 }
-
 return resultObj
 }
 
